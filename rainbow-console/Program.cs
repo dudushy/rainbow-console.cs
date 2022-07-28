@@ -35,7 +35,7 @@
                     else
                     {
                         Console.Write(space);
-                        Console.WriteLine("[RainbowGenerator] Invalid mode!");
+                        RainbowGenerator("fail");
                     }
                     
                     break;
@@ -102,7 +102,9 @@
                         }
                     }
                 default:
-                    Console.WriteLine("[RainbowGenerator] Invalid mode!");
+                    Console.WriteLine($"{space}[RainbowGenerator] Invalid mode!");
+                    Console.WriteLine("[RainbowGenerator] Press any key to exit.");
+                    Console.ReadKey();
                     break;
             }
         }
